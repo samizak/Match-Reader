@@ -1,0 +1,42 @@
+[
+  {
+    "source": "Spinmillion",
+    "tab": {
+      "id": 357,
+      "windowId": 3316,
+      "url": "https://www.spinmillion757.com/gb/sport/football/international/uefa-champions-league/paris-saint-germain-fc-barcelona-2722259853606268954"
+    },
+    "event": {
+      "available": true,
+      "eventId": "2722259853606268954",
+      "fixture": "Paris Saint-Germain vs FC Barcelona",
+      "home": "Paris Saint-Germain",
+      "away": "FC Barcelona",
+      "sport": "Football",
+      "competition": "UEFA Champions League",
+      "teamClassMarkers": [],
+      "scheduledKickoffUTC": "2026-10-20T19:00:00.000Z",
+      "virtual": null
+    }
+  },
+  {
+    "source": "Matchbook",
+    "tab": {
+      "id": 358,
+      "windowId": 3316,
+      "url": "https://www.matchbook.com/events/soccer/uefa-champions-league/34605784179800023/live-betting/paris-saint-germain-vs-fc-barcelona"
+    },
+    "event": {
+      "available": true,
+      "eventId": "34605784179800023",
+      "fixture": "Paris Saint-Germain vs FC Barcelona",
+      "home": "Paris Saint-Germain",
+      "away": "FC Barcelona",
+      "sport": "Soccer",
+      "competition": "UEFA Champions League",
+      "teamClassMarkers": [],
+      "scheduledKickoffUTC": "2026-10-20T19:02:00.000Z",
+      "virtual": null
+    }
+  }
+]

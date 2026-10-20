@@ -1,0 +1,30 @@
+const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('fs'),vm=require('vm');
+test('sidebar starts with a live pair, saves only on opt-in, and never requests disk workspace',async()=>{
+ const elements=new Map(),sent=[],requests=[],rendered=[];let timer,callbacks;
+ const element=()=>({textContent:'',checked:false,disabled:false,handlers:{},append(){},replaceChildren(){},addEventListener(k,f){this.handlers[k]=f;}});
+ const query=s=>{if(!elements.has(s))elements.set(s,element());return elements.get(s);};
+ const snapshot={source:'Spinmillion',bets:[],network:{event:{available:false}}};
+ const browser={runtime:{sendMessage:async m=>{requests.push(m);assert.equal(m.type,'reader-pair-read');assert.equal(m.refreshPrices,true);return {snapshots:[snapshot],issues:[],candidates:{},selectedTabs:{Spinmillion:1}};},sendNativeMessage:async(n,m)=>{sent.push(m);return {ok:true,workspace:{sources:{}}};}},tabs:{query:async()=>[{id:1}],onActivated:{addListener(){}},onUpdated:{addListener(){}}}};
+ const ctx=vm.createContext({document:{querySelector:query,createElement:element},browser,Date,URL,setInterval:f=>timer=f,MatchWorkspace:{createView:(root,c)=>{callbacks=c;return {render:w=>rendered.push(w)}}}});
+ for(const file of ['local-diagnostics.js','sidebar.js'])vm.runInContext(fs.readFileSync('spinmillion-reader-prototype/'+file,'utf8'),ctx);
+ await new Promise(r=>setImmediate(r));assert.equal(sent.length,1);assert.equal(sent[0].livePair,true);assert.equal(sent[0].save,false);assert.equal(sent[0].snapshots.length,1);assert.equal(rendered.at(-1).pairing.selectedTabs.Spinmillion,1);
+ query('#watch').checked=true;timer();await new Promise(r=>setImmediate(r));assert.equal(sent.length,2);
+ query('#local').checked=true;await query('#local').handlers.change();assert.equal(sent.at(-1).save,true);
+ callbacks.onSourceChange('Spinmillion','4');await new Promise(r=>setImmediate(r));assert(sent.every(m=>m.type==='workspace'&&m.livePair===true&&!m.snapshot));
+ assert.equal(requests.at(-1).selectedTabs.Spinmillion,4);
+ query('#watch').checked=true;timer();await new Promise(r=>setImmediate(r));assert.equal(Object.keys(requests.at(-1).selectedTabs).length,0,'manual changes are sent once, not reasserted by every sidebar poll');
+ callbacks.onAutoPair();await new Promise(r=>setImmediate(r));assert.equal(requests.at(-1).resetPair,true);assert.equal(requests.at(-1).anchorTabId,1);
+ callbacks.onRefreshPrices();await new Promise(r=>setImmediate(r));assert.equal(requests.at(-1).force,true);
+ const count=sent.length;query('#watch').checked=false;timer();await new Promise(r=>setImmediate(r));assert.equal(sent.length,count,'saving diagnostics must not override paused price requests');
+});
+test('production sidebar uses only its window controller and pausing is respected with diagnostics enabled',async()=>{
+ const elements=new Map();let scans=0,ticks=0,timer,activated;
+ const element=()=>({textContent:'',checked:false,disabled:false,handlers:{},append(){},replaceChildren(){},addEventListener(k,f){this.handlers[k]=f;}});
+ const query=s=>{if(!elements.has(s))elements.set(s,element());return elements.get(s);};
+ const browser={runtime:{sendMessage:()=>{throw Error('Legacy global pair read must not run');}},tabs:{onActivated:{addListener:f=>activated=f},onUpdated:{addListener(){}}}};
+ const ctx=vm.createContext({document:{querySelector:query,createElement:element},browser,Date,URL,setInterval:f=>timer=f,MatchWorkspace:{createView:()=>{throw Error('Do not create a second unused workspace view');}},WindowPair:{create:()=>({scan:async()=>scans++,tick:()=>ticks++})}});
+ for(const file of ['local-diagnostics.js','sidebar.js'])vm.runInContext(fs.readFileSync('spinmillion-reader-prototype/'+file,'utf8'),ctx);
+ assert.equal(scans,1);query('#watch').checked=true;activated();assert.equal(scans,2);
+ query('#watch').checked=false;query('#local').checked=true;timer();assert.equal(scans,2);assert.equal(ticks,1);
+ await query('#scan').handlers.click();assert.equal(scans,3);
+});

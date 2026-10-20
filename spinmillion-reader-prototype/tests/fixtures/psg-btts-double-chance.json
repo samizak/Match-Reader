@@ -1,0 +1,473 @@
+{
+  "book": {
+    "available": true,
+    "eventId": "2722259853606268954",
+    "fixture": "Paris Saint-Germain vs FC Barcelona",
+    "home": "Paris Saint-Germain",
+    "away": "FC Barcelona",
+    "generatedAt": "2026-10-20T19:55:33.094Z",
+    "markets": [
+      {
+        "id": "10",
+        "name": "Double chance",
+        "specifiers": "",
+        "outcomes": [
+          {
+            "id": "9",
+            "label": "Paris Saint-Germain or draw",
+            "odds": 1.18,
+            "blocked": null,
+            "earlyPayout": false,
+            "pricesObservedAt": "2026-10-20T19:55:33.206Z"
+          },
+          {
+            "id": "10",
+            "label": "Paris Saint-Germain or FC Barcelona",
+            "odds": 1.22,
+            "blocked": null,
+            "earlyPayout": false,
+            "pricesObservedAt": "2026-10-20T19:55:33.206Z"
+          },
+          {
+            "id": "11",
+            "label": "draw or FC Barcelona",
+            "odds": 2.14,
+            "blocked": null,
+            "earlyPayout": false,
+            "pricesObservedAt": "2026-10-20T19:55:33.206Z"
+          }
+        ]
+      },
+      {
+        "id": "29",
+        "name": "Both teams to score",
+        "specifiers": "",
+        "outcomes": [
+          {
+            "id": "74",
+            "label": "yes",
+            "odds": 1.25,
+            "blocked": null,
+            "earlyPayout": false,
+            "pricesObservedAt": "2026-10-20T19:55:33.206Z"
+          },
+          {
+            "id": "76",
+            "label": "no",
+            "odds": 3.7,
+            "blocked": null,
+            "earlyPayout": false,
+            "pricesObservedAt": "2026-10-20T19:55:33.206Z"
+          }
+        ]
+      }
+    ]
+  },
+  "exchange": {
+    "available": true,
+    "eventId": "34605784179800023",
+    "fixture": "Paris Saint-Germain vs FC Barcelona",
+    "home": "Paris Saint-Germain",
+    "away": "FC Barcelona",
+    "generatedAt": null,
+    "markets": [
+      {
+        "id": "34605800544200023",
+        "name": "Both Teams To Score",
+        "status": "open",
+        "marketType": "both_to_score",
+        "type": "binary",
+        "settlementScope": "Unverified \u2014 market rules must be checked.",
+        "observedAt": "2026-10-20T19:55:31.371Z",
+        "outcomes": [
+          {
+            "id": "34605800545000023",
+            "label": "Yes",
+            "status": "open",
+            "participantId": null,
+            "pricesObservedAt": "2026-10-20T19:55:31.371Z",
+            "prices": [
+              {
+                "side": "back",
+                "odds": 1.31,
+                "rawOdds": 1.31,
+                "availableAmount": 76.19999,
+                "currency": "GBP",
+                "oddsType": "DECIMAL",
+                "exchangeType": "back-lay",
+                "priceMode": "expanded",
+                "observedAt": "2026-10-20T19:55:31.371Z"
+              },
+              {
+                "side": "back",
+                "odds": 1.3,
+                "rawOdds": 1.3,
+                "availableAmount": 364.4,
+                "currency": "GBP",
+                "oddsType": "DECIMAL",
+                "exchangeType": "back-lay",
+                "priceMode": "expanded",
+                "observedAt": "2026-10-20T19:55:31.371Z"
+              },
+              {
+                "side": "back",
+                "odds": 1.29,
+                "rawOdds": 1.29,
+                "availableAmount": 286.59999,
+                "currency": "GBP",
+                "oddsType": "DECIMAL",
+                "exchangeType": "back-lay",
+                "priceMode": "expanded",
+                "observedAt": "2026-10-20T19:55:31.371Z"
+              },
+              {
+                "side": "lay",
+                "odds": 1.32,
+                "rawOdds": 1.32,
+                "availableAmount": 0.1,
+                "currency": "GBP",
+                "oddsType": "DECIMAL",
+                "exchangeType": "back-lay",
+                "priceMode": "expanded",
+                "observedAt": "2026-10-20T19:55:31.371Z"
+              },
+              {
+                "side": "lay",
+                "odds": 1.33,
+                "rawOdds": 1.33,
+                "availableAmount": 135,
+                "currency": "GBP",
+                "oddsType": "DECIMAL",
+                "exchangeType": "back-lay",
+                "priceMode": "expanded",
+                "observedAt": "2026-10-20T19:55:31.371Z"
+              },
+              {
+                "side": "lay",
+                "odds": 1.34,
+                "rawOdds": 1.34,
+                "availableAmount": 1108.35001,
+                "currency": "GBP",
+                "oddsType": "DECIMAL",
+                "exchangeType": "back-lay",
+                "priceMode": "expanded",
+                "observedAt": "2026-10-20T19:55:31.371Z"
+              }
+            ]
+          },
+          {
+            "id": "34605800545301023",
+            "label": "No",
+            "status": "open",
+            "participantId": null,
+            "pricesObservedAt": "2026-10-20T19:55:31.371Z",
+            "prices": [
+              {
+                "side": "back",
+                "odds": 4.1,
+                "rawOdds": 4.1,
+                "availableAmount": 0.032,
+                "currency": "GBP",
+                "oddsType": "DECIMAL",
+                "exchangeType": "back-lay",
+                "priceMode": "expanded",
+                "observedAt": "2026-10-20T19:55:31.371Z"
+              },
+              {
+                "side": "back",
+                "odds": 4,
+                "rawOdds": 4,
+                "availableAmount": 44.65,
+                "currency": "GBP",
+                "oddsType": "DECIMAL",
+                "exchangeType": "back-lay",
+                "priceMode": "expanded",
+                "observedAt": "2026-10-20T19:55:31.371Z"
+              },
+              {
+                "side": "back",
+                "odds": 3.95,
+                "rawOdds": 3.95,
+                "availableAmount": 219,
+                "currency": "GBP",
+                "oddsType": "DECIMAL",
+                "exchangeType": "back-lay",
+                "priceMode": "expanded",
+                "observedAt": "2026-10-20T19:55:31.371Z"
+              },
+              {
+                "side": "lay",
+                "odds": 4.2,
+                "rawOdds": 4.2,
+                "availableAmount": 11,
+                "currency": "GBP",
+                "oddsType": "DECIMAL",
+                "exchangeType": "back-lay",
+                "priceMode": "expanded",
+                "observedAt": "2026-10-20T19:55:31.371Z"
+              },
+              {
+                "side": "lay",
+                "odds": 4.3,
+                "rawOdds": 4.3,
+                "availableAmount": 80.71,
+                "currency": "GBP",
+                "oddsType": "DECIMAL",
+                "exchangeType": "back-lay",
+                "priceMode": "expanded",
+                "observedAt": "2026-10-20T19:55:31.371Z"
+              },
+              {
+                "side": "lay",
+                "odds": 4.4,
+                "rawOdds": 4.4,
+                "availableAmount": 105.99999,
+                "currency": "GBP",
+                "oddsType": "DECIMAL",
+                "exchangeType": "back-lay",
+                "priceMode": "expanded",
+                "observedAt": "2026-10-20T19:55:31.371Z"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "34605813957400023",
+        "name": "Double Chance",
+        "status": "open",
+        "marketType": "other",
+        "type": "multirunner",
+        "settlementScope": "Unverified \u2014 market rules must be checked.",
+        "observedAt": "2026-10-20T19:55:31.371Z",
+        "outcomes": [
+          {
+            "id": "34605813958000023",
+            "label": "Paris Saint-Germain or Draw",
+            "status": "open",
+            "participantId": null,
+            "pricesObservedAt": "2026-10-20T19:55:31.371Z",
+            "prices": [
+              {
+                "side": "back",
+                "odds": 1.24,
+                "rawOdds": 1.24,
+                "availableAmount": 474,
+                "currency": "GBP",
+                "oddsType": "DECIMAL",
+                "exchangeType": "back-lay",
+                "priceMode": "expanded",
+                "observedAt": "2026-10-20T19:55:31.371Z"
+              },
+              {
+                "side": "back",
+                "odds": 1.23,
+                "rawOdds": 1.23,
+                "availableAmount": 812.83,
+                "currency": "GBP",
+                "oddsType": "DECIMAL",
+                "exchangeType": "back-lay",
+                "priceMode": "expanded",
+                "observedAt": "2026-10-20T19:55:31.371Z"
+              },
+              {
+                "side": "back",
+                "odds": 1.22,
+                "rawOdds": 1.22,
+                "availableAmount": 710,
+                "currency": "GBP",
+                "oddsType": "DECIMAL",
+                "exchangeType": "back-lay",
+                "priceMode": "expanded",
+                "observedAt": "2026-10-20T19:55:31.371Z"
+              },
+              {
+                "side": "lay",
+                "odds": 1.25,
+                "rawOdds": 1.25,
+                "availableAmount": 119,
+                "currency": "GBP",
+                "oddsType": "DECIMAL",
+                "exchangeType": "back-lay",
+                "priceMode": "expanded",
+                "observedAt": "2026-10-20T19:55:31.371Z"
+              },
+              {
+                "side": "lay",
+                "odds": 1.26,
+                "rawOdds": 1.26,
+                "availableAmount": 484,
+                "currency": "GBP",
+                "oddsType": "DECIMAL",
+                "exchangeType": "back-lay",
+                "priceMode": "expanded",
+                "observedAt": "2026-10-20T19:55:31.371Z"
+              },
+              {
+                "side": "lay",
+                "odds": 1.27,
+                "rawOdds": 1.27,
+                "availableAmount": 889.13,
+                "currency": "GBP",
+                "oddsType": "DECIMAL",
+                "exchangeType": "back-lay",
+                "priceMode": "expanded",
+                "observedAt": "2026-10-20T19:55:31.371Z"
+              }
+            ]
+          },
+          {
+            "id": "34605813958301023",
+            "label": "Paris Saint-Germain or FC Barcelona",
+            "status": "open",
+            "participantId": null,
+            "pricesObservedAt": "2026-10-20T19:55:31.371Z",
+            "prices": [
+              {
+                "side": "back",
+                "odds": 1.28,
+                "rawOdds": 1.28,
+                "availableAmount": 189,
+                "currency": "GBP",
+                "oddsType": "DECIMAL",
+                "exchangeType": "back-lay",
+                "priceMode": "expanded",
+                "observedAt": "2026-10-20T19:55:31.371Z"
+              },
+              {
+                "side": "back",
+                "odds": 1.27,
+                "rawOdds": 1.27,
+                "availableAmount": 867.79,
+                "currency": "GBP",
+                "oddsType": "DECIMAL",
+                "exchangeType": "back-lay",
+                "priceMode": "expanded",
+                "observedAt": "2026-10-20T19:55:31.371Z"
+              },
+              {
+                "side": "back",
+                "odds": 1.26,
+                "rawOdds": 1.26,
+                "availableAmount": 599,
+                "currency": "GBP",
+                "oddsType": "DECIMAL",
+                "exchangeType": "back-lay",
+                "priceMode": "expanded",
+                "observedAt": "2026-10-20T19:55:31.371Z"
+              },
+              {
+                "side": "lay",
+                "odds": 1.3,
+                "rawOdds": 1.3,
+                "availableAmount": 287,
+                "currency": "GBP",
+                "oddsType": "DECIMAL",
+                "exchangeType": "back-lay",
+                "priceMode": "expanded",
+                "observedAt": "2026-10-20T19:55:31.371Z"
+              },
+              {
+                "side": "lay",
+                "odds": 1.31,
+                "rawOdds": 1.31,
+                "availableAmount": 735.87,
+                "currency": "GBP",
+                "oddsType": "DECIMAL",
+                "exchangeType": "back-lay",
+                "priceMode": "expanded",
+                "observedAt": "2026-10-20T19:55:31.371Z"
+              },
+              {
+                "side": "lay",
+                "odds": 1.32,
+                "rawOdds": 1.32,
+                "availableAmount": 668,
+                "currency": "GBP",
+                "oddsType": "DECIMAL",
+                "exchangeType": "back-lay",
+                "priceMode": "expanded",
+                "observedAt": "2026-10-20T19:55:31.371Z"
+              }
+            ]
+          },
+          {
+            "id": "34605813958600023",
+            "label": "Draw or FC Barcelona",
+            "status": "open",
+            "participantId": null,
+            "pricesObservedAt": "2026-10-20T19:55:31.371Z",
+            "prices": [
+              {
+                "side": "back",
+                "odds": 2.34,
+                "rawOdds": 2.34,
+                "availableAmount": 115,
+                "currency": "GBP",
+                "oddsType": "DECIMAL",
+                "exchangeType": "back-lay",
+                "priceMode": "expanded",
+                "observedAt": "2026-10-20T19:55:31.371Z"
+              },
+              {
+                "side": "back",
+                "odds": 2.32,
+                "rawOdds": 2.32,
+                "availableAmount": 210,
+                "currency": "GBP",
+                "oddsType": "DECIMAL",
+                "exchangeType": "back-lay",
+                "priceMode": "expanded",
+                "observedAt": "2026-10-20T19:55:31.371Z"
+              },
+              {
+                "side": "back",
+                "odds": 2.3,
+                "rawOdds": 2.3,
+                "availableAmount": 715,
+                "currency": "GBP",
+                "oddsType": "DECIMAL",
+                "exchangeType": "back-lay",
+                "priceMode": "expanded",
+                "observedAt": "2026-10-20T19:55:31.371Z"
+              },
+              {
+                "side": "lay",
+                "odds": 2.38,
+                "rawOdds": 2.38,
+                "availableAmount": 0.1,
+                "currency": "GBP",
+                "oddsType": "DECIMAL",
+                "exchangeType": "back-lay",
+                "priceMode": "expanded",
+                "observedAt": "2026-10-20T19:55:31.371Z"
+              },
+              {
+                "side": "lay",
+                "odds": 2.4,
+                "rawOdds": 2.4,
+                "availableAmount": 380,
+                "currency": "GBP",
+                "oddsType": "DECIMAL",
+                "exchangeType": "back-lay",
+                "priceMode": "expanded",
+                "observedAt": "2026-10-20T19:55:31.371Z"
+              },
+              {
+                "side": "lay",
+                "odds": 2.42,
+                "rawOdds": 2.42,
+                "availableAmount": 550,
+                "currency": "GBP",
+                "oddsType": "DECIMAL",
+                "exchangeType": "back-lay",
+                "priceMode": "expanded",
+                "observedAt": "2026-10-20T19:55:31.371Z"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

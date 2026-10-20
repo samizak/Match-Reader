@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Match Reader</title><link rel="stylesheet" href="sidebar.css"></head>
+<body>
+<header class="app-header"><div class="brand-mark" aria-hidden="true">M<span>↗</span></div><h1 class="brand-name">MATCH READER <span class="brand-version">v0.13.1</span></h1></header>
+<div class="toolbar"><button id="scan" class="primary-button">↻ Refresh prices now</button><div class="toggle-stack"><label><input id="watch" type="checkbox" checked> Auto prices</label><label><input id="local" type="checkbox"> Save diagnostics</label></div></div>
+<p id="local-status" class="save-status" role="status">Live updates + automatic price checks.</p>
+<main id="workspace" aria-label="Fixture and market comparison workspace"></main>
+<details class="inspector"><summary>Capture details &amp; diagnostics <span aria-hidden="true">⌄</span></summary><div class="inspector-content"><p id="connection-status" class="microcopy" role="status">Connecting…</p><p id="status" role="status">Read an event tab to inspect its current capture.</p><section id="network"></section><section id="cards"></section><details><summary>Extracted JSON</summary><pre id="json">No current capture.</pre></details><button id="copy" class="secondary-button" disabled>Copy extracted JSON</button></div></details>
+
+<script src="local-diagnostics.js"></script><script src="odds-matcher.js"></script><script src="workspace.js"></script><script src="window-pair.js"></script><script src="sidebar.js"></script>
+</body></html>

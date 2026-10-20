@@ -1,0 +1,79 @@
+# Live captures and local betting records (may contain account/session information)
+/firefox-diagnostics/
+/captures/
+/screenshots/
+/bookmakers-tracker.md
+/matched_betting_dashboard.html
+*.har
+*.har.gz
+
+# Generated extension packages and build output
+*.zip
+*.xpi
+*.crx
+/build/
+/dist/
+/artifacts/
+
+# Machine-specific native helper launcher; recreated by install.py
+/firefox-companion/run-host.sh
+
+# Logs, process state and temporary files
+*.log
+*.log.*
+logs/
+*.pid
+*.pid.lock
+*.tmp
+*.temp
+*~
+*.swp
+*.swo
+/tmp/
+/temp/
+
+# Python environments, bytecode and test/tool caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# JavaScript dependencies and generated test output; keep lockfiles tracked
+node_modules/
+.npm/
+coverage/
+playwright-report/
+test-results/
+
+# Secrets and local environment configuration; allow documented examples
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+credentials.*.json
+
+# Local agent, cloud and editor state
+/.agents/
+/.aws/
+/.codex/
+/.claude/
+.idea/
+.vscode/
+.history/
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+desktop.ini

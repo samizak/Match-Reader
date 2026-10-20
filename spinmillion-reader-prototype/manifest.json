@@ -1,0 +1,42 @@
+{
+  "manifest_version": 2,
+  "name": "Match Reader \u2014 Prototype",
+  "version": "0.13.1",
+  "description": "Read-only Spinmillion and Matchbook event and price capture. No betting automation.",
+  "permissions": [
+    "activeTab",
+    "https://www.spinmillion757.com/*",
+    "webRequest",
+    "webRequestBlocking",
+    "https://api-h-c7818b61-608.sptpub.com/*",
+    "nativeMessaging",
+    "https://www.matchbook.com/*",
+    "https://matchbook.com/*",
+    "https://api.matchbook.com/*"
+  ],
+  "browser_action": {
+    "default_title": "Open match reader"
+  },
+  "background": {
+    "scripts": [
+      "lossless-json.js",
+      "network-store.js",
+      "matchbook-store.js",
+      "paired-tabs.js",
+      "price-refresh.js",
+      "background.js"
+    ]
+  },
+  "sidebar_action": {
+    "default_title": "Match Reader",
+    "default_panel": "sidebar.html",
+    "open_at_install": false
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "spinmillion-reader-prototype@example.invalid",
+      "strict_min_version": "109.0"
+    }
+  },
+  "content_security_policy": "script-src 'self'; object-src 'none'"
+}
